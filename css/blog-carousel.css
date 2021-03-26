@@ -1,0 +1,73 @@
+main .blog {
+  background: url("sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 65%;
+}
+
+main .blog .blog-post {
+  padding-top: 6rem;
+}
+
+main .blog .blog-post .blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog .blog-post .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog .blog-post .blog-content .blog-title .btn-blog {
+  padding: .7rem 2rem;
+  background: var(--sky);
+  margin: .5rem;
+}
+
+main .blog .blog-post .blog-content span {
+  display: block;
+}
+
+.container .owl-nav {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container .owl-nav .owl-prev .owl-nav-prev,
+.container .owl-nav .owl-next .owl-nav-next {
+  color: var(--text-blue);
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+.container .owl-nav .owl-prev .owl-nav-prev:hover,
+.container .owl-nav .owl-next .owl-nav-next:hover {
+  background: transparent;
+  color: var(--text-blue);
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background: transparent;
+  color: var(--text-blue);
+}
+
+@media only screen and (max-width: 768px) {
+  main .blog {
+    background-size: 90%;
+  }
+}

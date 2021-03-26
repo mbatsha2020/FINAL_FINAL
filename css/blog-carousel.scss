@@ -1,0 +1,74 @@
+main .blog {
+    background: url('sunset,jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+
+    .blog-post {
+        padding-top: 6rem;
+
+        .blog-content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 80%;
+            margin: 3rem 2rem;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+
+            .blog-title {
+                padding: 2rem 0;
+
+                .btn-blog {
+                    padding: .7rem 2rem;
+                    background: var(--sky);
+                    margin: .5rem;
+                }
+            }
+
+            span {
+                display: block
+            }
+        }
+    }
+}
+
+.container .owl-nav {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+
+    .owl-prev .owl-nav-prev,
+    .owl-next .owl-nav-next {
+        color: var(--text-blue);
+        background: transparent;
+        font-size: 1.3rem;
+
+        &:hover {
+            background: transparent;
+            color: var(--text-blue);
+        }
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background: transparent;
+    color: var(--text-blue);
+}
+
+@media only screen and (max-width: 1130px) {}
+
+@media only screen and (max-width: 960px) {}
+
+@media only screen and (max-width: 768px) {
+    main .blog {
+        background-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 480px) {}
